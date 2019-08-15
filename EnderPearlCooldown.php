@@ -23,7 +23,7 @@ namespace JackMD\ScoreHud\Addons
 		 */
 		public function getProcessedTags(Player $player): array{
 			return [
-				"{pearl_duration}" => $this->EnderPearlCooldown->onEnderPearl(PlayerInteractEvent $event)
+				"{pearl_duration}" => $this->EnderPearlCooldown->onEnderPearl(PlayerInteractEvent, $event)
 			];
 		}
 	}
